@@ -30,7 +30,14 @@ So now in your view, you can do something like this:
     No chunky bacon here... yet.
   <%- end -%>
 
+Obviously, when you're ready to push the feature out to all of your
+environments, you can just remove the conditional.
 
 That's pretty much it for now.
+
+TODO
+====
+
+* Time-based feature activations (so a feature would go active at a certain date/time)
 
 Copyright (c) 2008 Pat Nakajima, Animoto Productions, released under the MIT license
