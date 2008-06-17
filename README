@@ -1,0 +1,36 @@
+Feature Hider
+============
+
+Hide features based on the current Rails environment.
+
+Example
+=======
+
+First, specify your new features in config/features.yml. You can
+generate this file by running the following rake task:
+
+  $ rake hider:config:generate
+
+Let's say you're about to release a feature you call "chunky bacon" 
+that you only want active in development and staging for now. Here's
+how you'd specify that in features.yml:
+
+  chunky_bacon:
+    test: true
+    development: true
+    staging: false
+    production: false
+
+
+So now in your view, you can do something like this:
+
+  <%- if FEATURES[:chunky_bacon].active? -%>
+    This is where the chunky bacon goes.
+  <%- else -%>
+    No chunky bacon here... yet.
+  <%- end -%>
+
+
+That's pretty much it for now.
+
+Copyright (c) 2008 Pat Nakajima, Animoto Productions, released under the MIT license

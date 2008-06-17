@@ -1,0 +1,1 @@
+require 'feature_hider'

@@ -1,0 +1,20 @@
+# === Feature List ===
+# ===   Examples   ===
+# 
+# # This feature would be only be active in development:
+# feature_name:
+#   test: true
+#   development: true
+#   staging: false
+#   production: false
+# 
+# # This feature would be active in staging and development:
+# another_feature:
+#   test: true
+#   development: true
+#   staging: false
+#   production: false
+#
+# ================================================================
+
+# Add your features here...
